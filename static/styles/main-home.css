@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    overflow-x: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.bg-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.header {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 50px;
+    z-index: 1;
+}
+
+.logo {
+    height: 60px;
+    margin-right: 30px;
+    margin-left: 45px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+#search{
+    position: absolute;
+    right: 13%;
+    margin-top: 2.2%;
+    font-size: 16px;
+    border-radius: 8px;
+    background: rgba(51, 50, 50, 0.5);
+    padding: 6px;
+    color: white;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-link-home {
+    text-decoration: none;
+    color: #ff0000;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.nav-link:hover {
+    color: #ff0000;
+}
+
+.movie-info {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    transform: translateX(-50%);
+    text-align: left;
+    color: white;
+    padding: 20px;
+    width: 300px; /* Limit width to prevent going too far right */
+}
+
+.movie-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.movie-description {
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.5; /* Adjust line spacing for readability */
+}
+
+
+.movie-buttons {
+    display: flex;
+    gap: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.watch-now, .add-to-playlist {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.7);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.watch-now:hover, .add-to-playlist:hover {
+    background-color: red;
+}
+
+.image-slider {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding-top: 10px;
+    justify-content: space-between;
+}
+
+.top-trending {
+    bottom: 0;
+}
+
+.trending-now {
+    position: relative;
+}
+
+.image-track-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-top: 40px;
+}
+
+.image-track-container2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    padding-left: 10px;
+}
+
+.image-slider h2 {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    color: white;
+    font-size: 21px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.image-track {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    scrollbar-width: none;
+    margin-top: 10px;
+}
+
+.image-track::-webkit-scrollbar {
+    display: none;
+}
+
+.image-card {
+    width: 200px;
+    height: 115px;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-card:hover {
+    transform: scale(1.1);
+}
+
+.prev, .next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+}
+
+.next {
+    margin-right: 20px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.Popular {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 30px;
+    margin-top: 25px;
+}
